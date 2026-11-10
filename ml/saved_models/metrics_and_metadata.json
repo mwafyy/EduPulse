@@ -1,0 +1,341 @@
+{
+  "dataset_stats": {
+    "total_samples": 1044,
+    "math_samples": 395,
+    "portuguese_samples": 649,
+    "at_risk_count": 230,
+    "low_risk_count": 814,
+    "at_risk_percentage": 22.03,
+    "multi_risk_counts": {
+      "Medium Risk": 407,
+      "Low Risk": 407,
+      "High Risk": 230
+    }
+  },
+  "models_evaluation": {
+    "Dummy Baseline": {
+      "model_name": "Dummy Baseline",
+      "accuracy": 0.7799,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          163,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.7799043062200957,
+          "recall": 1.0,
+          "f1-score": 0.8763440860215054,
+          "support": 163.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 46.0
+        },
+        "accuracy": 0.7799043062200957,
+        "macro avg": {
+          "precision": 0.38995215311004783,
+          "recall": 0.5,
+          "f1-score": 0.4381720430107527,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.6082507268606487,
+          "recall": 0.7799043062200957,
+          "f1-score": 0.683464526418686,
+          "support": 209.0
+        }
+      }
+    },
+    "Logistic Regression": {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.7129,
+      "precision": 0.4103,
+      "recall": 0.6957,
+      "f1_score": 0.5161,
+      "roc_auc": 0.7857,
+      "confusion_matrix": [
+        [
+          117,
+          46
+        ],
+        [
+          14,
+          32
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8931297709923665,
+          "recall": 0.7177914110429447,
+          "f1-score": 0.7959183673469388,
+          "support": 163.0
+        },
+        "1": {
+          "precision": 0.41025641025641024,
+          "recall": 0.6956521739130435,
+          "f1-score": 0.5161290322580645,
+          "support": 46.0
+        },
+        "accuracy": 0.7129186602870813,
+        "macro avg": {
+          "precision": 0.6516930906243883,
+          "recall": 0.706721792477994,
+          "f1-score": 0.6560236998025016,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.7868514236533521,
+          "recall": 0.7129186602870813,
+          "f1-score": 0.7343379395283349,
+          "support": 209.0
+        }
+      }
+    },
+    "Random Forest": {
+      "model_name": "Random Forest",
+      "accuracy": 0.7703,
+      "precision": 0.4848,
+      "recall": 0.6957,
+      "f1_score": 0.5714,
+      "roc_auc": 0.8272,
+      "confusion_matrix": [
+        [
+          129,
+          34
+        ],
+        [
+          14,
+          32
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9020979020979021,
+          "recall": 0.7914110429447853,
+          "f1-score": 0.8431372549019608,
+          "support": 163.0
+        },
+        "1": {
+          "precision": 0.48484848484848486,
+          "recall": 0.6956521739130435,
+          "f1-score": 0.5714285714285714,
+          "support": 46.0
+        },
+        "accuracy": 0.7703349282296651,
+        "macro avg": {
+          "precision": 0.6934731934731935,
+          "recall": 0.7435316084289143,
+          "f1-score": 0.707282913165266,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.8102631021291308,
+          "recall": 0.7703349282296651,
+          "f1-score": 0.7833353437068608,
+          "support": 209.0
+        }
+      }
+    }
+  },
+  "cv_summary": {
+    "Dummy Baseline": {
+      "cv_accuracy_mean": 0.7796,
+      "cv_recall_mean": 0.0,
+      "cv_precision_mean": 0.0,
+      "cv_f1_mean": 0.0
+    },
+    "Logistic Regression": {
+      "cv_accuracy_mean": 0.7102,
+      "cv_recall_mean": 0.6362,
+      "cv_precision_mean": 0.407,
+      "cv_f1_mean": 0.4926
+    },
+    "Random Forest": {
+      "cv_accuracy_mean": 0.7665,
+      "cv_recall_mean": 0.5983,
+      "cv_precision_mean": 0.48,
+      "cv_f1_mean": 0.5255
+    }
+  },
+  "top_feature_importances": [
+    {
+      "feature": "failures",
+      "importance": 0.1636
+    },
+    {
+      "feature": "course_Portuguese",
+      "importance": 0.0552
+    },
+    {
+      "feature": "course_Math",
+      "importance": 0.052
+    },
+    {
+      "feature": "absences",
+      "importance": 0.0513
+    },
+    {
+      "feature": "school_MS",
+      "importance": 0.0411
+    },
+    {
+      "feature": "goout",
+      "importance": 0.0334
+    },
+    {
+      "feature": "school_GP",
+      "importance": 0.0298
+    },
+    {
+      "feature": "Fedu",
+      "importance": 0.0287
+    },
+    {
+      "feature": "higher_yes",
+      "importance": 0.0278
+    },
+    {
+      "feature": "age",
+      "importance": 0.0264
+    },
+    {
+      "feature": "freetime",
+      "importance": 0.0258
+    },
+    {
+      "feature": "studytime",
+      "importance": 0.0247
+    },
+    {
+      "feature": "higher_no",
+      "importance": 0.0233
+    },
+    {
+      "feature": "health",
+      "importance": 0.0228
+    },
+    {
+      "feature": "famrel",
+      "importance": 0.0223
+    }
+  ],
+  "multiclass_evaluation": {
+    "accuracy": 0.5407,
+    "f1_weighted": 0.5294,
+    "report": {
+      "High Risk": {
+        "precision": 0.5,
+        "recall": 0.5217391304347826,
+        "f1-score": 0.5106382978723404,
+        "support": 46.0
+      },
+      "Low Risk": {
+        "precision": 0.6,
+        "recall": 0.7317073170731707,
+        "f1-score": 0.6593406593406593,
+        "support": 82.0
+      },
+      "Medium Risk": {
+        "precision": 0.47540983606557374,
+        "recall": 0.35802469135802467,
+        "f1-score": 0.4084507042253521,
+        "support": 81.0
+      },
+      "accuracy": 0.5406698564593302,
+      "macro avg": {
+        "precision": 0.5251366120218579,
+        "recall": 0.5371570462886593,
+        "f1-score": 0.5261432204794506,
+        "support": 209.0
+      },
+      "weighted avg": {
+        "precision": 0.5297042905325907,
+        "recall": 0.5406698564593302,
+        "f1-score": 0.5293770469393074,
+        "support": 209.0
+      }
+    }
+  },
+  "feature_columns": {
+    "numeric": [
+      "age",
+      "Medu",
+      "Fedu",
+      "traveltime",
+      "studytime",
+      "failures",
+      "famrel",
+      "freetime",
+      "goout",
+      "Dalc",
+      "Walc",
+      "health",
+      "absences"
+    ],
+    "categorical": [
+      "school",
+      "sex",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "guardian",
+      "schoolsup",
+      "famsup",
+      "paid",
+      "activities",
+      "nursery",
+      "higher",
+      "internet",
+      "romantic",
+      "course"
+    ],
+    "all": [
+      "school",
+      "sex",
+      "age",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Medu",
+      "Fedu",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "guardian",
+      "traveltime",
+      "studytime",
+      "failures",
+      "schoolsup",
+      "famsup",
+      "paid",
+      "activities",
+      "nursery",
+      "higher",
+      "internet",
+      "romantic",
+      "famrel",
+      "freetime",
+      "goout",
+      "Dalc",
+      "Walc",
+      "health",
+      "absences",
+      "course"
+    ]
+  }
+}

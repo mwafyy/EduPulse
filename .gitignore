@@ -1,0 +1,36 @@
+﻿# Secrets and environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Databases and backups
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Raw datasets
+*.csv
+*.xlsx
+*.xls
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local backups and old backend versions
+*_before_security.py
+*_secure.py
+*.bak
+*.backup
+
+# Temporary and diagnostic files
+.DS_Store
+Thumbs.db
+# Original datasets and archives
+student+performance/
